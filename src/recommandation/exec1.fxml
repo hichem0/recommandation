@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane id="AnchorPane" prefHeight="602.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="recommandation.ExecController1">
+   <top>
+      <TableView fx:id="tableAffichage" prefHeight="529.0" prefWidth="517.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="userAffichage" prefWidth="190.0" text="User" />
+          <TableColumn fx:id="sujetAffichage" prefWidth="159.0" text="Item" />
+            <TableColumn fx:id="ratingAffichage" prefWidth="167.0" text="Result" />
+        </columns>
+      </TableView>
+   </top>
+   <bottom>
+      <HBox prefHeight="135.0" prefWidth="517.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_LEFT" prefHeight="52.0" prefWidth="39.0" text="MAE" />
+            <Label fx:id="eval" alignment="TOP_LEFT" prefHeight="52.0" prefWidth="116.0" />
+            <Label alignment="TOP_LEFT" prefHeight="52.0" prefWidth="47.0" text="RMSE" />
+            <Label fx:id="rmseval" alignment="TOP_LEFT" prefHeight="52.0" prefWidth="101.0" />
+            <Label prefHeight="21.0" prefWidth="80.0" text="Temps" />
+            <Label fx:id="time" prefHeight="17.0" prefWidth="139.0" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

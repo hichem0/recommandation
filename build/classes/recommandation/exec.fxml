@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane id="AnchorPane" prefHeight="602.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="recommandation.ExecController">
+   <top>
+      <TableView fx:id="tableAffichage" prefHeight="529.0" prefWidth="517.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="userAffichage" prefWidth="190.0" text="User" />
+          <TableColumn fx:id="sujetAffichage" prefWidth="159.0" text="Item" />
+            <TableColumn fx:id="ratingAffichage" prefWidth="167.0" text="Result" />
+        </columns>
+      </TableView>
+   </top>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_LEFT" prefHeight="52.0" prefWidth="104.0" text="Performance" />
+            <Label fx:id="eval" alignment="TOP_LEFT" prefHeight="52.0" prefWidth="271.0" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
